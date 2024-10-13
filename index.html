@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Bootstrap Example</title>
+  <title>SE PROJECT</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -120,25 +120,30 @@
 
     .contact-image-container {
       width: 100%;
-      padding-bottom: 100%; /* Membuat container persegi */
+      padding-bottom: 100%;
+      /* Membuat container persegi */
       position: relative;
       overflow: hidden;
     }
+
     .contact-image {
       position: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
-      object-fit: cover; /* Mencegah peregangan gambar */
-      object-position: center; /* Memposisikan gambar di tengah */
+      object-fit: cover;
+      /* Mencegah peregangan gambar */
+      object-position: center;
+      /* Memposisikan gambar di tengah */
     }
   </style>
 
-<nav class="navbar navbar-default">
+  <nav class="navbar navbar-default">
     <div class="container-fluid">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1"
+          aria-expanded="false">
           <span class="sr-only">Toggle navigation</span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -146,13 +151,14 @@
         </button>
         <a class="navbar-brand" href="#">Project SE</a>
       </div>
-  
+
       <div class="collapse navbar-collapse" id="navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
           <li><a href="#">Link</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+              aria-expanded="false">Dropdown <span class="caret"></span></a>
             <ul class="dropdown-menu">
               <li><a href="#">contact</a></li>
               <li><a href="#">Help</a></li>
@@ -170,7 +176,7 @@
       </div>
     </div>
   </nav>
-  
+
   <div class="container">
     <header class="text-center my-5">
       <h1>Buku Kontak Perusahaan</h1>
@@ -180,7 +186,9 @@
     <div class="row mb-5">
       <div class="col-md-6">
         <h2>Tentang Kami</h2>
-        <p>Perusahaan kami adalah pemimpin dalam industri teknologi, berfokus pada inovasi dan solusi digital. Dengan tim yang terdiri dari profesional berbakat, kami berkomitmen untuk memberikan layanan terbaik kepada klien kami.</p>
+        <p>Perusahaan kami adalah pemimpin dalam industri teknologi, berfokus pada inovasi dan solusi digital. Dengan
+          tim yang terdiri dari profesional berbakat, kami berkomitmen untuk memberikan layanan terbaik kepada klien
+          kami.</p>
       </div>
       <div class="col-md-6">
         <h2>Visi & Misi</h2>
@@ -193,7 +201,7 @@
     </div>
 
     <h2 class="text-center mb-4">Daftar Kontak Karyawan</h2>
-    
+
     <ul class="list-group" id="contact-list">
       <li class="list-group-item">
         <div class="col-xs-12 col-sm-3">
@@ -255,41 +263,71 @@
     </ul>
 
     <div class="row mt-5">
-      <div class="col-md-6">
-        <h2>Lokasi Kantor</h2>
-        <address>
-          <strong>Kantor Pusat</strong><br>
-          Jl. Sudirman No. 123<br>
-          Jakarta Pusat, 12930<br>
-          Indonesia<br>
-          <abbr title="Telepon">T:</abbr> (021) 555-1234
-        </address>
-      </div>
-      <div class="col-md-6">
-        <h2>Jam Kerja</h2>
-        <table class="table table-bordered">
-          <tbody>
-            <tr>
-              <td>Senin - Jumat</td>
-              <td>08:00 - 17:00</td>
-            </tr>
-            <tr>
-              <td>Sabtu</td>
-              <td>09:00 - 14:00</td>
-            </tr>
-            <tr>
-              <td>Minggu</td>
-              <td>Tutup</td>
-            </tr>
-          </tbody>
-        </table>
+      <div class="col-md-12">
+        <div class="card shadow">
+          <div class="card-body">
+            <h2 class="card-title text-primary mb-4">Campus Location</h2>
+            <address class="mb-0">
+              <strong>President University</strong><br>
+              Jl. Ki Hajar Dewantara<br>
+              Kota Jababeka, Cikarang Baru, Bekasi 17550<br>
+              West Java, Indonesia<br>
+              <abbr title="Phone"><i class="fas fa-phone-alt text-muted me-2"></i></abbr> (021) 8910 9762
+            </address>
+          </div>
+        </div>
       </div>
     </div>
 
-    <footer class="text-center mt-5 py-3 bg-light">
-      <p>&copy; 2023 Perusahaan Teknologi Indonesia. Hak Cipta Dilindungi.</p>
+    <footer class="bg-dark text-light py-5 mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">About Us</h5>
+            <p class="mb-0">President University is a leading institution dedicated to excellence in education and innovation.</p>
+          </div>
+          <div class="col-md-4 mb-4 mb-md-0">
+            <h5 class="mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Home</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Programs</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Admissions</a></li>
+              <li class="mb-2"><a href="#" class="text-light text-decoration-none">Research</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h5 class="mb-3">Contact Us</h5>
+            <address>
+              <strong>President University</strong><br>
+              Jl. Ki Hajar Dewantara<br>
+              Kota Jababeka, Cikarang Baru, Bekasi 17550<br>
+              West Java, Indonesia<br>
+              <abbr title="Phone"><i class="fas fa-phone-alt me-2"></i></abbr> (021) 8910 9762<br>
+              <abbr title="Email"><i class="fas fa-envelope me-2"></i></abbr> <a href="mailto:info@president.ac.id" class="text-light text-decoration-none">info@president.ac.id</a>
+            </address>
+          </div>
+        </div>
+        <hr class="my-4 bg-light">
+        <div class="row align-items-center">
+          <div class="col-md-6 mb-3 mb-md-0">
+            <p class="mb-0">&copy; 2023 President University. All Rights Reserved.</p>
+          </div>
+          <div class="col-md-6">
+            <ul class="list-inline text-md-end mb-0">
+              <li class="list-inline-item"><a href="#" class="text-light fs-5"><i class="fab fa-facebook-f"></i></a></li>
+              <li class="list-inline-item ms-3"><a href="#" class="text-light fs-5"><i class="fab fa-twitter"></i></a></li>
+              <li class="list-inline-item ms-3"><a href="#" class="text-light fs-5"><i class="fab fa-instagram"></i></a></li>
+              <li class="list-inline-item ms-3"><a href="#" class="text-light fs-5"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item ms-3"><a href="#" class="text-light fs-5"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </footer>
   </div>
 
+  <!-- Add Font Awesome for social icons -->
+  <script src="https://kit.fontawesome.com/your-font-awesome-kit.js" crossorigin="anonymous"></script>
 </body>
+
 </html>
