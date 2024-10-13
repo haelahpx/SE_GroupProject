@@ -117,6 +117,22 @@
       padding: 5px 10px;
       font-size: 1.25em;
     }
+
+    .contact-image-container {
+      width: 100%;
+      padding-bottom: 100%; /* Membuat container persegi */
+      position: relative;
+      overflow: hidden;
+    }
+    .contact-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Mencegah peregangan gambar */
+      object-position: center; /* Memposisikan gambar di tengah */
+    }
   </style>
 
 <nav class="navbar navbar-default">
@@ -155,112 +171,125 @@
     </div>
   </nav>
   
-  <ul class="list-group" id="contact-list">
-    <li class="list-group-item">
-      <div class="col-xs-12 col-sm-3">
-        <img src="http://api.randomuser.me/portraits/men/49.jpg" alt="Scott Stevens"
-          class="img-responsive img-circle" />
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <span class="name">samuel manalu </span><br />
-        <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip"
-          title="5842 Hillcrest Rd"></span>
-        <span class="visible-xs"> <span class="text-muted">5842 Hillcrest Rd</span><br /></span>
-        <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip"
-          title="(870) 288-4149"></span>
-        <span class="visible-xs"> <span class="text-muted">(870) 288-4149</span><br /></span>
-        <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="scott.stevens@example.com"></span>
-        <span class="visible-xs"> <span class="text-muted">scott.stevens@example.com</span><br /></span>
-      </div>
-      <div class="clearfix"></div>
-    </li>
-    <li class="list-group-item">
-      <div class="col-xs-12 col-sm-3">
-        <img src="http://api.randomuser.me/portraits/men/97.jpg" alt="Seth Frazier" class="img-responsive img-circle" />
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <span class="name">muhammad haikal islami</span><br />
-        <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip"
-          title="7396 E North St"></span>
-        <span class="visible-xs"> <span class="text-muted">7396 E North St</span><br /></span>
-        <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip"
-          title="(560) 180-4143"></span>
-        <span class="visible-xs"> <span class="text-muted">(560) 180-4143</span><br /></span>
-        <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="seth.frazier@example.com"></span>
-        <span class="visible-xs"> <span class="text-muted">seth.frazier@example.com</span><br /></span>
-      </div>
-      <div class="clearfix"></div>
-    </li>
-    <li class="list-group-item">
-      <div class="col-xs-12 col-sm-3">
-        <img src="http://api.randomuser.me/portraits/women/90.jpg" alt="Jean Myers" class="img-responsive img-circle" />
-      </div>
-      <div class="col-xs-12 col-sm-9">
-        <span class="name">muhammad yusuf firizki</span><br />
-        <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip"
-          title="4949 W Dallas St"></span>
-        <span class="visible-xs"> <span class="text-muted">4949 W Dallas St</span><br /></span>
-        <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip"
-          title="(477) 792-2822"></span>
-        <span class="visible-xs"> <span class="text-muted">(477) 792-2822</span><br /></span>
-        <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="jean.myers@example.com"></span>
-        <span class="visible-xs"> <span class="text-muted">jean.myers@example.com</span><br /></span>
-      </div>
-      <div class="clearfix"></div>
-    </li>
-  </ul>
+  <div class="container">
+    <header class="text-center my-5">
+      <h1>Buku Kontak Perusahaan</h1>
+      <p class="lead">Temukan informasi kontak karyawan kami dengan mudah</p>
+    </header>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <h4>About Project SE</h4>
-          <p>Brief description of your project or company.</p>
-          <img src="path/to/your/logo.png" alt="Project SE Logo" class="footer-logo">
-        </div>
-        <div class="col-md-4">
-          <h4>Quick Links</h4>
-          <ul class="list-unstyled">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            <li><a href="#">Sitemap</a></li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <h4>Stay Connected</h4>
-          <form>
-            <div class="input-group">
-              <input type="email" class="form-control" placeholder="Enter your email">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="submit">Subscribe</button>
-              </span>
-            </div>
-          </form>
-          <div class="social-icons">
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-instagram"></i></a>
-          </div>
-        </div>
+    <div class="row mb-5">
+      <div class="col-md-6">
+        <h2>Tentang Kami</h2>
+        <p>Perusahaan kami adalah pemimpin dalam industri teknologi, berfokus pada inovasi dan solusi digital. Dengan tim yang terdiri dari profesional berbakat, kami berkomitmen untuk memberikan layanan terbaik kepada klien kami.</p>
       </div>
-      <hr>
-      <div class="row">
-        <div class="col-md-6">
-          <p>&copy; 2024 Project SE. All rights reserved.</p>
-        </div>
-        <div class="col-md-6 text-right">
-          <ul class="list-inline">
-            <li><a href="#">Privacy Policy</a></li>
-            <li><a href="#">Terms of Use</a></li>
-            <li><a href="#">Contact Us</a></li>
-          </ul>
-        </div>
+      <div class="col-md-6">
+        <h2>Visi & Misi</h2>
+        <ul>
+          <li>Menjadi perusahaan teknologi terkemuka di Indonesia</li>
+          <li>Mengembangkan solusi inovatif untuk memecahkan masalah bisnis</li>
+          <li>Memberdayakan karyawan kami untuk mencapai potensi penuh mereka</li>
+        </ul>
       </div>
     </div>
-  </footer>
+
+    <h2 class="text-center mb-4">Daftar Kontak Karyawan</h2>
+    
+    <ul class="list-group" id="contact-list">
+      <li class="list-group-item">
+        <div class="col-xs-12 col-sm-3">
+          <div class="contact-image-container">
+            <img src="samuel.jpg" alt="Samuel Manalu" class="contact-image img-circle" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+          <span class="name">Samuel Manalu</span><br />
+          <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip"
+            title="5842 Hillcrest Rd"></span>
+          <span class="visible-xs"> <span class="text-muted">5842 Hillcrest Rd</span><br /></span>
+          <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip"
+            title="(870) 288-4149"></span>
+          <span class="visible-xs"> <span class="text-muted">(870) 288-4149</span><br /></span>
+          <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="scott.stevens@example.com"></span>
+          <span class="visible-xs"> <span class="text-muted">scott.stevens@example.com</span><br /></span>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li class="list-group-item">
+        <div class="col-xs-12 col-sm-3">
+          <div class="contact-image-container">
+            <img src="haikal.jpg" alt="Muhammad Haikal Islami" class="contact-image img-circle" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+          <span class="name">Muhammad Haikal Islami</span><br />
+          <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip"
+            title="7396 E North St"></span>
+          <span class="visible-xs"> <span class="text-muted">7396 E North St</span><br /></span>
+          <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip"
+            title="(560) 180-4143"></span>
+          <span class="visible-xs"> <span class="text-muted">(560) 180-4143</span><br /></span>
+          <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="seth.frazier@example.com"></span>
+          <span class="visible-xs"> <span class="text-muted">seth.frazier@example.com</span><br /></span>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+      <li class="list-group-item">
+        <div class="col-xs-12 col-sm-3">
+          <div class="contact-image-container">
+            <img src="yusuf.jpg" alt="Muhammad Yusuf Firizki" class="contact-image img-circle" />
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+          <span class="name">Muhammad Yusuf Firizki</span><br />
+          <span class="glyphicon glyphicon-map-marker text-muted c-info" data-toggle="tooltip"
+            title="4949 W Dallas St"></span>
+          <span class="visible-xs"> <span class="text-muted">4949 W Dallas St</span><br /></span>
+          <span class="glyphicon glyphicon-earphone text-muted c-info" data-toggle="tooltip"
+            title="(477) 792-2822"></span>
+          <span class="visible-xs"> <span class="text-muted">(477) 792-2822</span><br /></span>
+          <span class="fa fa-comments text-muted c-info" data-toggle="tooltip" title="jean.myers@example.com"></span>
+          <span class="visible-xs"> <span class="text-muted">jean.myers@example.com</span><br /></span>
+        </div>
+        <div class="clearfix"></div>
+      </li>
+    </ul>
+
+    <div class="row mt-5">
+      <div class="col-md-6">
+        <h2>Lokasi Kantor</h2>
+        <address>
+          <strong>Kantor Pusat</strong><br>
+          Jl. Sudirman No. 123<br>
+          Jakarta Pusat, 12930<br>
+          Indonesia<br>
+          <abbr title="Telepon">T:</abbr> (021) 555-1234
+        </address>
+      </div>
+      <div class="col-md-6">
+        <h2>Jam Kerja</h2>
+        <table class="table table-bordered">
+          <tbody>
+            <tr>
+              <td>Senin - Jumat</td>
+              <td>08:00 - 17:00</td>
+            </tr>
+            <tr>
+              <td>Sabtu</td>
+              <td>09:00 - 14:00</td>
+            </tr>
+            <tr>
+              <td>Minggu</td>
+              <td>Tutup</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <footer class="text-center mt-5 py-3 bg-light">
+      <p>&copy; 2023 Perusahaan Teknologi Indonesia. Hak Cipta Dilindungi.</p>
+    </footer>
+  </div>
 
 </body>
 </html>
