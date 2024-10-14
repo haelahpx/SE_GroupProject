@@ -1,6 +1,6 @@
-###Software Engineering Group Project
+Software Engineering Group Project
 
-##Group Member:
+Group Member:
 1. Muhamad Yusuf Firizki
 2. Muhamad Haikal Islami
 3. Samuel jagar adoman manalu
